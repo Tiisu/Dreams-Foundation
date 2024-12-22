@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navbar.classList.toggle('responsive');
     });
 });
+
 document.querySelectorAll('.grouped-list').forEach(function(list) {
     list.addEventListener('mouseenter', function() {
         this.querySelector('.list-items').classList.remove('hidden');
@@ -21,4 +22,13 @@ document.querySelectorAll('.grouped-list').forEach(function(list) {
     list.addEventListener('mouseleave', function() {
         this.querySelector('.list-items').classList.add('hidden');
     });
+});
+
+document.getElementById('menu-button').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+    } else {
+        menu.classList.add('hidden');
+    }
 });
