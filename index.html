@@ -344,6 +344,50 @@
     </section>
     <section class="py-12 bg-gray-100">
         <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <button class="w-full text-left text-gray-800 font-bold focus:outline-none" onclick="toggleAccordion('faq1')">What is the Dreams Foundation?</button>
+                    <div id="faq1" class="hidden mt-2 text-gray-700">
+                        <p>The Dreams Foundation is a non-profit organization dedicated to improving the lives of children and families in need through various programs and initiatives.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <button class="w-full text-left text-gray-800 font-bold focus:outline-none" onclick="toggleAccordion('faq2')">How can I get involved?</button>
+                    <div id="faq2" class="hidden mt-2 text-gray-700">
+                        <p>You can get involved by volunteering, donating, sponsoring a child, or participating in our events. Visit our "Get Involved" section for more information.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <button class="w-full text-left text-gray-800 font-bold focus:outline-none" onclick="toggleAccordion('faq3')">Where do the donations go?</button>
+                    <div id="faq3" class="hidden mt-2 text-gray-700">
+                        <p>Donations go directly to funding our programs and initiatives, including education, healthcare, and community support projects.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <button class="w-full text-left text-gray-800 font-bold focus:outline-none" onclick="toggleAccordion('faq4')">How can I contact the Dreams Foundation?</button>
+                    <div id="faq4" class="hidden mt-2 text-gray-700">
+                        <p>You can contact us via email at contact@dreamsfoundation.org or by phone at +1 (123) 456-7890. Our address is 123 Dreams Foundation St, City, Country.</p>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <button class="w-full text-left text-gray-800 font-bold focus:outline-none" onclick="toggleAccordion('faq5')">What programs do you offer?</button>
+                    <div id="faq5" class="hidden mt-2 text-gray-700">
+                        <p>We offer programs in education, healthcare, and community support. Visit our "Our Work" section to learn more about our specific programs and initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleAccordion(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Contact Us</h2>
             <div class="flex flex-col md:flex-row -mx-4">
                 <div class="w-full md:w-1/2 px-4 mb-8">
