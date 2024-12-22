@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Additional CSS for hover effect */
+.nav-item:hover .sub-menu {
+  display: block;
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #1e3a8a; /* Tailwind blue-900 */
+  padding: 10px;
+  border-radius: 5px;
+}
+.sub-menu a {
+  display: block;
+  padding: 5px 10px;
+}
