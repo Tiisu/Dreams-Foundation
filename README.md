@@ -37,7 +37,7 @@ You can make a difference in the lives of orphaned children by:
 For inquiries, support, or partnership opportunities, please reach out to us:
 - **Website:** (https://tiisu.github.io/Dreams-Foundation/)
 - **Email:** info@dreamsfoundation.org
-- **Phone:** +123 456 7890
-- **Address:** [Your Organization's Address]
+- **Phone:** +233 550318885
+- **Address:** 
 
 Thank you for supporting Dreams Foundation and helping us make dreams come true for children in need.
