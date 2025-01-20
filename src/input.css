@@ -2,18 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Additional CSS for hover effect */
-.nav-item:hover .sub-menu {
-  display: block;
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
 }
-.sub-menu {
-  display: none;
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
   position: absolute;
-  background-color: #1e3a8a; /* Tailwind blue-900 */
-  padding: 10px;
-  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background: #C3F499;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
-.sub-menu a {
-  display: block;
-  padding: 5px 10px;
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
